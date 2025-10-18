@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanmayi Shurpali · Portfolio</title>
+  <meta name="description" content="Tanmayi Shurpali Portfolio" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#/home">Tanmayi Shurpali</a>
+      <nav class="links">
+        <a href="#/about">About</a>
+        <a href="#/experience">Experience</a>
+        <a href="#/projects">Projects</a>
+        <a href="#/skills">Skills</a>
+        <a href="#/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    © <span id="year"></span> Tanmayi Shurpali
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
