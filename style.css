@@ -345,11 +345,13 @@ body{
 .tl-item:nth-child(odd) .tl-card { grid-column: 1 / span 1; justify-self: end; max-width: 520px; }
 .tl-item:nth-child(even) .tl-card { grid-column: 2 / span 1; justify-self: start; max-width: 520px; }
 
+/* Flip on hover (desktop) - STABLE VERSION */
 .tl-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(100,181,246,.22);
   border-color: #2a3140;
 }
+
 
 /* meta row (company + dates) */
 .tl-meta {
@@ -3622,3 +3624,88 @@ body {
     margin: 6px 0;
   }
 }
+/* ===== Contact Cards - Clickable Version ===== */
+.contact-card {
+  background: linear-gradient(135deg, rgba(100, 181, 246, 0.08), rgba(167, 139, 250, 0.08));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.contact-card-link {
+  cursor: pointer;
+}
+
+.contact-card-link:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(100, 181, 246, 0.25);
+  border-color: var(--accent);
+}
+
+.contact-card-link:hover .card-action-hint {
+  opacity: 1;
+}
+
+/* Static cards (like location) don't have hover effect */
+.contact-card-static {
+  cursor: default;
+}
+
+/* Action hint (appears on hover) */
+.card-action-hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Remove old button styles - Not needed anymore */
+.contact-actions {
+  display: none;
+}
+
+/* Contact value - make it clear it's clickable */
+.contact-card-link .contact-value {
+  transition: color 0.2s ease;
+}
+
+.contact-card-link:hover .contact-value {
+  color: var(--accent);
+}
+/* ===== Contact Cards Grid - 2x2 Layout ===== */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile - stack to 1 column */
+@media (max-width: 600px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.tl-card-flip {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.tl-card-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+

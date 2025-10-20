@@ -160,3 +160,12 @@ export default function Experience(){
 
   return el;
 }
+// Add click-to-flip functionality
+setTimeout(() => {
+  const flipCards = el.querySelectorAll('.tl-card-flip');
+  flipCards.forEach(card => {
+    card.addEventListener('click', function() {
+      this.classList.toggle('flipped');
+    });
+  });
+}, 100);
