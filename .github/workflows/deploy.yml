@@ -19,9 +19,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Prepare dist
         run: |
+          echo "=== Files in root ==="
+          ls -la
           mkdir dist
-          cp -R index.html style.css app.js routes dist/
+          cp index.html dist/
+          cp style.css dist/
+          cp app.js dist/
+          cp -R routes dist/
           cp profile.jpeg dist/
+          echo "=== Files in dist ==="
+          ls -la dist/
           cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
