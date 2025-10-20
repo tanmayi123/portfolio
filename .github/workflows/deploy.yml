@@ -21,6 +21,7 @@ jobs:
         run: |
           mkdir dist
           cp -R index.html style.css app.js routes dist/
+          cp profile.jpeg dist/
           cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
