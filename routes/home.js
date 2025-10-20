@@ -32,7 +32,7 @@ export default function Home(){
     <div class="home-hero fade-in-element">
       <div class="hero-left">
         <div class="profile-pic-wrapper">
-          <img src="./profile.jpeg alt="Tanmayi Shurpali" class="profile-pic-enhanced" />
+           <img src="./profile.jpeg" alt="Tanmayi Shurpali" class="profile-pic-enhanced" />
           <div class="rotating-border"></div>
         </div>
       </div>
