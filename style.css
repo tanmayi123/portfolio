@@ -3538,3 +3538,87 @@ body {
     min-height: 48px;
   }
 }
+/* ===== Experience Section Mobile Fixes ===== */
+
+/* Disable flip on mobile, show all content instead */
+@media (max-width: 900px) {
+  /* Remove flip animation on mobile */
+  .tl-card-flip {
+    perspective: none;
+    cursor: default;
+  }
+  
+  .tl-card-inner {
+    transform: none !important;
+  }
+  
+  /* Show both front and back content together on mobile */
+  .tl-card-front,
+  .tl-card-back {
+    position: static !important;
+    transform: none !important;
+    backface-visibility: visible !important;
+  }
+  
+  .tl-card-back {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px dashed var(--border);
+  }
+  
+  /* Hide flip hints on mobile */
+  .flip-hint {
+    display: none;
+  }
+  
+  /* Better card spacing */
+  .tl-card {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  /* Stack metadata vertically */
+  .tl-meta {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  
+  .tl-company {
+    font-size: 17px;
+  }
+  
+  .tl-role {
+    font-size: 15px;
+  }
+  
+  /* Tech tags wrap better */
+  .tech-stack {
+    gap: 6px;
+  }
+  
+  .tech-tag {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 600px) {
+  .tl-card {
+    padding: 16px;
+  }
+  
+  .tl-company {
+    font-size: 16px;
+  }
+  
+  .tl-points {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+  .tl-points li {
+    margin: 6px 0;
+  }
+}
