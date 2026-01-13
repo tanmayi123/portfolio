@@ -26,7 +26,7 @@ export default function Experience(){
                     <line x1="8" y1="2" x2="8" y2="6"></line>
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                   </svg>
-                  Jul 2025 – Present
+                  Jul 2025 – Dec 2025
                 </div>
                 <div class="tl-location">📍 Boston, MA</div>
                 <div class="flip-hint">Hover/Tap for details →</div>
