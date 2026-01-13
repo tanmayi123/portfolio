@@ -15,7 +15,7 @@ export default function About(){
         </div>
         <div class="stat-box">
           <div class="stat-icon">💼</div>
-          <div class="stat-value">1.5+</div>
+          <div class="stat-value">2+</div>
           <div class="stat-label">Years Experience</div>
         </div>
         <div class="stat-box">
