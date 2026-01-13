@@ -40,7 +40,8 @@ export default function Experience(){
                 <ul class="tl-points">
                   <li>Designed <b>Snowflake stored procedures</b> and scheduled tasks across 5+ channels (calls, chats, surveys).</li>
                   <li>Built <b>10+ Tableau dashboards</b> on custom SQL sources; reduced manual effort.</li>
-                  <li>Collaborated on building an <b>LLM-powered chatbot</b> (HF embeddings) for natural-language search over 1,000+ reports.</li>
+                  <li> Designed a KPI decomposition framework using decision-tree logic to decompose core KPIs into sub-metrics and segment
+                      combinations, quantifying marginal impact and isolating the top drivers influencing performance variance</li>
                   <li>Enhanced a <b>Streamlit</b> app with automated Matplotlib comparisons for YoY trend reporting.</li>
                 </ul>
               </div>
