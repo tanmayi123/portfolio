@@ -40,14 +40,12 @@ export default function Home(){
         <h1 class="h1">Hi, I'm <span class="gradient-name">Tanmayi Shurpali</span></h1>
         <p class="muted home-description">
           I'm a Data Enthusiast passionate about turning complex data into actionable insights.
-          I specialize in analytics, visualization, and building scalable data solutions using Python, SQL, ML based solutions and cloud technologies like AWS and Snowflake.
+          My background includes analytics, machine learning, and data visualization, with hands-on experience building scalable data pipelines and solutions using Python, SQL, and cloud platforms like AWS , GCP and Snowflake.
         </p>
         <p class="muted home-description">
-          P.S : If you're a data geek like me, press the "Play Carnival" button to attend the data carnival!!
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn accent" href="#projects">View Projects</a>
           <a class="btn accent" href="#contact">Contact Me</a>
-          <button class="btn carnival-btn" id="carnival-entrance-btn">🎪 Play Carnival</button>
         </div>
       </div>
     </div>
