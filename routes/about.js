@@ -32,8 +32,8 @@ export default function About(){
 
       <!-- About Description -->
       <p class="about-description">
-        I'm currently pursuing my Master's in Data Analytics and Engineering at <b>Northeastern University</b> (GPA: 3.7), 
-        where I focus on large-scale data processing, analytics strategy, and applied machine learning.
+        I'm currently pursuing my Master's in Data Analytics and Engineering at <b>Northeastern University</b>, 
+        where I focus on building large-scale data pipelines, analytics strategy, and applied machine learning techniques.
         I hold a Bachelor's in Computer Science and Engineering from <b>KLE Technological University</b> and have professional experience at 
         <b>Amazon Web Services</b> and <b>Fidelity Investments</b>.
       </p>
@@ -69,11 +69,13 @@ export default function About(){
             <div class="edu-content">
               <div class="edu-degree">Master's in Data Analytics and Engineering</div>
               <div class="edu-school">Northeastern University</div>
-              <div class="edu-date">Sep 2024 - Aug 2026 • GPA: 3.7</div>
+              <div class="edu-date">Sep 2024 - Aug 2026 • GPA: 3.76</div>
               <div class="edu-courses">
                 <span class="course-tag">Data Management & Analytics</span>
-                <span class="course-tag">Data Mining</span>
+                <span class="course-tag">Data Mining in Engineering</span>
                 <span class="course-tag">Computation & Visualization</span>
+                <span class="course-tag">Machine Learning Operations</span>
+                <span class="course-tag">Applied Generative AI</span>
               </div>
             </div>
           </div>
@@ -86,7 +88,7 @@ export default function About(){
               <div class="edu-courses">
                 <span class="course-tag">EDA</span>
                 <span class="course-tag">Data Integration & Cloud Services</span>
-                <span class="course-tag">Machine Learning</span>
+                <span class="course-tag">Machine Learning and Neural Networks</span>
                 <span class="course-tag">Database Management</span>
               </div>
             </div>
