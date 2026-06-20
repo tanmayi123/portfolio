@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tanmayi Shurpali · Portfolio</title>
   <meta name="description" content="Tanmayi Shurpali Portfolio" />
+
+  <!-- Redirect to new portfolio -->
+  <meta http-equiv="refresh" content="0; url=https://tanmayi-shurpali.vercel.app/">
+  <script>window.location.replace("https://tanmayi-shurpali.vercel.app/");</script>
+
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -20,13 +25,10 @@
       </nav>
     </div>
   </header>
-
   <main id="app" class="container"></main>
-
   <footer class="footer">
     © <span id="year"></span> Tanmayi Shurpali
   </footer>
-
   <script type="module" src="./app.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
